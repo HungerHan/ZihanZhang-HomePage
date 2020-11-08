@@ -408,6 +408,22 @@ header p{
   background-repeat:no-repeat;
 }
 
+.zhihu-image {
+  border-radius: 5px;
+  background-image: url("../images/zhihu.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.github-image {
+  border-radius: 5px;
+  background-image: url("../images/github.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .csdn-image, .zhihu-image, .github-image {
   grid-column: 2 / span 1;
 }
