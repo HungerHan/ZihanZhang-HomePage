@@ -400,6 +400,13 @@ header p{
     overflow: hidden;
   }
 
+.csdn-image {
+  border-radius: 5px;
+  background-image: url("../images/csdn.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat:no-repeat;
+}
 
 .csdn-image, .zhihu-image, .github-image {
   grid-column: 2 / span 1;
