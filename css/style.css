@@ -641,7 +641,7 @@ header p{
 .container-contact {
   display: grid;
   grid-template-columns: auto 400px auto;
-  grid-template-rows: 50px 100px 100px 200px 400px 150px;
+  grid-template-rows: 50px 100px 100px 200px 200px 150px;
   grid-row-gap: 15px;
 }
 
@@ -794,7 +794,7 @@ header p{
       font-size: 12px;
       line-height: 1.5;
       color: #242424;
-      grid-column: 1 / -1;
+      grid-column: 2 / span 4;
       padding-top: 30px;
       padding-bottom: 30px;
       text-align: center;
@@ -808,51 +808,6 @@ header p{
       background-size: cover;
       background-position: center;
       background-size: cover;
-    }
-
-
-    /* for About Me page*/
-    .about_me-image {
-      grid-column: 2 / span 3;
-    }
-
-    .self-image {
-      grid-column: 2 / span 3;
-    }
-
-    .about_me {
-      grid-column: 2 / span 3;
-    }
-
-
-    .about_me-image {
-      grid-row: 3 / span 2;
-    }
-
-    .self-image {
-      grid-row: 6 / span 1;
-    }
-
-    .about_me {
-      grid-row: 4 / span 1;
-    }
-
-
-    .about_me-image {
-      border-radius: 5px;
-      background-image: url("../images/umich.jpg");
-      background-size: 540px 720px;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .about_me h2 {
-      font-size: 18px;
-    }
-
-    .about_me p {
-      font-size: 16px;
-      text-align: left;
     }
 
 
@@ -955,7 +910,7 @@ header p{
     .container-contact {
       display: grid;
       grid-template-columns: auto 400px auto;
-      grid-template-rows: 50px 100px 100px 200px 400px 150px;
+      grid-template-rows: 50px 100px 100px 200px 200px 150px;
       grid-row-gap: 15px;
     }
 
@@ -969,6 +924,18 @@ header p{
 
     .contact_form {
       grid-row: 4 / span 2;
+    }
+
+    .contact-footer {
+      grid-row: 7 / span 1;
+      background-color: white;
+      font-size: 12px;
+      line-height: 1.5;
+      color: #242424;
+      grid-column: 2 / span 4;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      text-align: center;
     }
     /*************************Contact Page for big screen END *******************************/
   }
