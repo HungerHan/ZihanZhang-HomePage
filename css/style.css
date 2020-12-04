@@ -88,8 +88,7 @@ nav a:hover{
 
 /*************************************** Effects Definition ******************************************/
 
-/* back to top button (learned from W3schools) */
-/* url: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+/************** Back to TOP button: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp ******************/
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -108,9 +107,10 @@ nav a:hover{
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+/***************** Back to Top Button END **********************/
+ 
 
-/*Add animation for header slogan (learned from animista.net/)*/
-/*url: https://animista.net/play/entrances/puff-in*/
+/***************************** Puff in animation: https://animista.net/play/entrances/puff-in ********************************/ 
 /*Keyframes for animation*/
 @-webkit-keyframes puff-in {
   0% {
@@ -149,9 +149,10 @@ nav a:hover{
   -webkit-animation: puff-in 1.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
           animation: puff-in 1.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
+/************* Puff in animation END ********************/
 
-/*Create contact fomr (learn from W3school)*/
-/*url: https://www.w3schools.com/howto/howto_css_contact_form.asp
+
+/************** contact form: https://www.w3schools.com/howto/howto_css_contact_form.asp ***************/
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -200,10 +201,12 @@ input[type=reset]:hover {
   background-image: url("../images/para1.jpg");
   /*background-color: black;*/
 }
+/**** Contact Form End ****/
 
-/*    flip card (learned from W3school)
-    url: https://www.w3schools.com/howto/howto_css_flip_card.asp*/
-  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+/******************** Flip Card: https://www.w3schools.com/howto/howto_css_flip_card.asp **************************/
+/* The flip card container - set the width and height to whatever you want. */
+/* We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -248,6 +251,7 @@ input[type=reset]:hover {
   color: white;
   transform: rotateY(180deg);
 }
+/************** Filp Card End **************************/
 
 /*************************************** Effects Definition END ******************************************/
 
@@ -644,7 +648,7 @@ header p{
 .container-contact {
   display: grid;
   grid-template-columns: auto 400px auto;
-  grid-template-rows: 50px 100px 100px 200px 200px 150px;
+  grid-template-rows: 50px 100px 100px 400px 50px 300px 50px;
   grid-row-gap: 15px;
 }
 
@@ -655,18 +659,27 @@ header p{
   grid-row: 3 / span 1;
 }
 
-  .flex-box > div {
-  }
-
   .contact_form {
     grid-column: 2 / span 1;
   }
 
   .contact_form {
-    grid-row: 4 / span 2;
+    grid-row: 4 / span 4;
   }
+.flip-card {
+  grid-row: 6 / span 6;
+  grid-column: 2 / span 2;
+  text-align: center;
+}
 
+  .contact-footer{
+    grid-row: 7 / span 7;
+  }
 /*************************************** Contact Page End ***********************************/
+
+
+
+
 
 /*****************************************************
           for tablet (800px - 1024px)
@@ -932,6 +945,11 @@ header p{
     grid-row: 4 / span 2;
   }
 
+  .flip-card {
+    grid-row: 6 / span 6;
+    grid-column: 2 / span 2;
+    text-align: center;
+  }
   .contact-footer {
     grid-row: 7 / span 1;
     background-color: white;
@@ -1194,8 +1212,8 @@ header p{
     /*************************Contact Page for big screen *******************************/
     .container-contact {
       display: grid;
-      grid-template-columns: auto 400px auto;
-      grid-template-rows: 50px 100px 100px 200px 200px 150px;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 50px 100px 100px 300px 150px 300px 150px;
       grid-row-gap: 15px;
     }
 
@@ -1209,6 +1227,14 @@ header p{
 
     .contact_form {
       grid-row: 4 / span 2;
+    }
+
+    .flip-card {
+      grid-row: 6 / span 6;
+      grid-column: 2 / span 3;
+      display: grid;
+      align-items: center;
+      margin: 10px auto;
     }
 
     .contact-footer {
