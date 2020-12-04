@@ -190,23 +190,15 @@ input[type=reset]:hover {
   background-color: #00274C;
 }
 
-.parallax_box{
+.parallax{
   background-attachment: fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
   color: white;
-  height: 300px;                /* Parallax effect */
-  background-image: url("../images/index_bg.jpeg");
+  height: 1100px;                /* Parallax effect */
+  background-image: url("../images/endless.jpg");
   /*background-color: black;*/
-}
-.parallax_box p{
-  color: #242424;
-  font-size: 18px;
-  padding: 0 100px;
-  text-align: center;
-  line-height: 130%;
-  color: white;
 }
 
 /*    flip card (learned from W3school)
@@ -318,6 +310,10 @@ header p{
   overflow: hidden;
 }
 
+.parallax{
+  grid-column: 1 / span 5;
+  grid-row: 3 / span 6;
+}
 /* row */
 .education{
   grid-row: 3 / span 1;
@@ -381,7 +377,7 @@ header p{
 .container-share {
   display: grid;
   grid-template-columns: auto 400px auto;
-  grid-template-rows: 50px 100px 170px 50px 100px 50px 100px 50px 100px 200px;
+  grid-template-rows: 50px 100px 170px 50px 100px 50px 100px 50px 100px 300px 200px;
   grid-row-gap: 15px;
 }
 
@@ -462,8 +458,13 @@ header p{
     grid-row: 9 / span 1;
   }
 
+  .map
+  {
+    grid-row: 10 / span 1;
+    grid-column: 1 / -1;
+  }
 .share-footer {
-  grid-row: 10 / span 1;
+  grid-row: 11 / span 1;
 
   background-color: white;
   font-size: 12px;
@@ -654,9 +655,6 @@ header p{
 
   .flex-box > div {
   }
-.parallax_box {
-    grid-column: 1 / -1;
-  }
 
   .contact_form {
     grid-column: 2 / span 1;
@@ -746,7 +744,7 @@ header p{
     .container-share {
       display: grid;
       grid-template-columns: auto 300px 200px 300px auto;
-      grid-template-rows: 70px 70px 150px 100px 100px 100px 100px;
+      grid-template-rows: 70px 70px 150px 100px 100px 100px 300px 100px;
       grid-row-gap: 50px;
     }
 
@@ -788,8 +786,12 @@ header p{
       grid-row: 6 / span 1;
     }
 
-    .share-footer {
+    .map {
       grid-row: 7 / span 1;
+      grid-column: 2 / span 4;
+    }
+    .share-footer {
+      grid-row: 8 / span 1;
       background-color: white;
       font-size: 12px;
       line-height: 1.5;
