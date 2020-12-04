@@ -27,7 +27,7 @@
       <ul>
         <li><a href="index.html" id="home">Home</a></li>
         <li><a href="sharing.html" id="about_me_nav">Sharing</a></li>
-        <li><a href="gallary.html" id="gallary_nav">Gallery</a></li>
+        <li><a href="gallary.html" id="gallary_nav">Gallary</a></li>
         <li><a href="contact.html" id="current_page_nav">Contact</a></li>
       </ul>
     </nav>
@@ -41,28 +41,30 @@
       <div>LinkedIn: <a href="https://www.linkedin.com/in/zihan-zhang-77ba84152" target="_blank"> Zihan Zhang</a></div>
     </div>
     
- 
     <div class="contact_form">
-      <form action="mailto:zihanzhang1205@gmail.com" method="post" enctype="text/plain">
+      
+      <form action="https://formspree.io/f/meqplbqk" method="POST">
+
+        
         <label for="name">Your Name</label>
-        <input type="text" id="name" name="input_name" placeholder="Your name..">
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+
         <label for="email">Your email</label>
-        <input type="text" id="email" name="input_email" placeholder="Your email..">
-        <label for="role">Who are You?</label>
-        <select id="role" name="input_role">
-          <option value="Student">Student</option>
-          <option value="Employer">Employer</option> 
-          <option value="Professor">Professor</option>
-        </select>
+        <input type="text" id="email" name="email" placeholder="Your email.." required>
+
+
+       
+
         <label for="subject">Subject</label>
-        <textarea id="subject" name="inout_subject" placeholder="Feel free to contact me!" style="height:200px"></textarea>
+        <textarea id="subject" name="subject" placeholder="Feel free to contact me!" style="height:200px"></textarea>
+
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
       </form>
     </div>
 
 
-    <footer>
+    <footer class="contact-footer">
       <p>
         Contact: <a href="mailto:zihanz@umich.edu">zihanz@umich.edu</a><br/>
         2020 &copy; Zihan Zhang<br/>

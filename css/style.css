@@ -151,7 +151,7 @@ nav a:hover{
 }
 
 /*Create contact fomr (learn from W3school)*/
-/*url: https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+/*url: https://www.w3schools.com/howto/howto_css_contact_form.asp
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -197,7 +197,7 @@ input[type=reset]:hover {
   background-size: cover;       /* Parallax effect */
   color: white;
   height: 1100px;                /* Parallax effect */
-  background-image: url("../images/endless.jpg");
+  background-image: url("../images/para1.jpg");
   /*background-color: black;*/
 }
 
@@ -290,7 +290,9 @@ header p{
 }
 
 
-/**************************** for screen smaller than 800px **************************/
+/*****************************************************
+          for screen smaller than 800px
+*****************************************************/
 .container{
   display: grid;
   grid-template-columns: auto 400px auto;
@@ -666,10 +668,291 @@ header p{
 
 /*************************************** Contact Page End ***********************************/
 
+/*****************************************************
+          for tablet (800px - 1024px)
+*****************************************************/
+
+/*************************************** Home Page for tablet********************************************/
+@media all and (min-width: 800px) and (max-width: 1024px)  {
+
+  .container {
+    display: grid;
+    grid-template-columns: auto 40px 340px 300px auto;
+    grid-template-rows: 70px 70px 10px 280px 280px 300px 100px;
+    grid-row-gap: 50px;
+  }
+
+  /*row 1*/
+  nav {
+    background-color: white;
+    text-align: left;
+    padding: 40px;
+    align-self: center;
+  }
+
+    nav a {
+      font-size: 18px;
+    }
 
 
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ for big screen @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+  /*row 2*/
+  header {
+    color: #1c1c1c;
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 1;
+  }
+
+
+  /* column */
+  .education {
+    grid-column: 2 / span 2;
+  }
+
+  .experience {
+    grid-column: 2 / span 3;
+  }
+
+  .bupt-image, .gallary-image, .umich-image {
+    grid-column: 2 / span 2;
+  }
+
+  .umich, .bupt, .gallary {
+    grid-column: 4 / span 1;
+  }
+
+  /* row */
+  .education {
+    grid-row: 3 / span 1;
+  }
+
+  .umich, .umich-image {
+    grid-row: 4 / span 1;
+  }
+
+  .bupt, .bupt-image {
+    grid-row: 5 / span 1;
+  }
+
+  .experience {
+    grid-row: 6 / span 1;
+  }
+}
+/*************************************** Home Page End *********************************************/
+
+
+/*************************************** Sharing Page for big screen ********************************************/
 @media all and (min-width: 800px) {
+
+  .container-share {
+    display: grid;
+    grid-template-columns: auto 300px 200px 300px auto;
+    grid-template-rows: 70px 70px 150px 100px 100px 100px 300px 100px;
+    grid-row-gap: 50px;
+  }
+
+  /* column */
+  .share {
+    grid-column: 2 / span 4;
+  }
+
+  .share-image {
+    grid-column: 2 / span 4;
+    max-height: 600px;
+    overflow: hidden;
+  }
+
+
+  .csdn-image, .zhihu-image, .github-image {
+    grid-column: 2 / span 1;
+  }
+
+  .csdn, .zhihu, .github {
+    grid-column: 3 / span 4;
+  }
+
+  /* row */
+  .share-image, .share {
+    grid-row: 3 / span 1;
+  }
+
+  .csdn-image, .csdn {
+    grid-row: 4 / span 1;
+  }
+
+  .github-image, .github {
+    grid-row: 5 / span 1;
+  }
+
+
+  .zhihu-image, .zhihu {
+    grid-row: 6 / span 1;
+  }
+
+  .map {
+    grid-row: 7 / span 1;
+    grid-column: 2 / span 4;
+  }
+
+  .share-footer {
+    grid-row: 8 / span 1;
+    background-color: white;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #242424;
+    grid-column: 2 / span 4;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .share-image {
+    border-radius: 5px;
+    background-image: url("../images/inter.jpg");
+    background-size: 324px 432px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+
+  /*************************************** Sharing Page End********************************************/
+
+  /******************* For gallary page Location ************************/
+  .gallary_photo {
+    grid-column: 2 / span 3; /* 760 px*/
+    grid-row: 3 / span 4; /* 1900 px*/
+    display: grid;
+    grid-template-columns: 190px 190px 190px 190px;
+    grid-template-rows: 320px 320px 320px 320px 300px 300px 300px;
+    margin: auto;
+    width: 760px;
+    grid-row-gap: 0;
+  }
+
+  .img-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+    overflow: hidden;
+    border-radius: 0;
+    background-size: 900px 1200px;
+  }
+
+  .img-2 {
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 1;
+    overflow: hidden;
+    border-radius: 0;
+    background-size: 700px 400px;
+  }
+
+  .img-3 {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    overflow: hidden;
+    border-radius: 0;
+    background-size: 600px 400px;
+  }
+
+  .img-4 {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+    overflow: hidden;
+    border-radius: 0;
+    background-size: 600px 400px;
+  }
+
+  .img-5 {
+    grid-column: 4 / span 1;
+    grid-row: 2 / 5;
+    overflow: hidden;
+    border-radius: 0;
+    background-size: 1600px 1200px;
+  }
+
+  .img-6 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    overflow: hidden;
+    border-radius: 0;
+    background-size: 800px 600px;
+  }
+
+  .img-7 {
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 1;
+    overflow: hidden;
+    border-radius: 0;
+    background-size: 800px 600px;
+  }
+
+  .img-8 {
+    grid-column: 1 / span 4;
+    grid-row: 6 / span 1;
+    overflow: hidden;
+    border-radius: 0;
+    background-size: 800px 600px;
+  }
+
+  .img-9 {
+    grid-column: 1 / span 4;
+    grid-row: 7 / span 1;
+    overflow: hidden;
+    border-radius: 0;
+    background-size: 800px 600px;
+  }
+
+  .img-10 {
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 1;
+    overflow: hidden;
+    border-radius: 0;
+    background-size: 800px 600px;
+  }
+
+  /*************************Contact Page for big screen *******************************/
+  .container-contact {
+    display: grid;
+    grid-template-columns: auto 400px auto;
+    grid-template-rows: 50px 100px 100px 200px 200px 150px;
+    grid-row-gap: 15px;
+  }
+
+  .flex-box {
+    grid-column: 2 / span 4;
+  }
+
+  .contact_form {
+    grid-column: 2 / span 3;
+  }
+
+  .contact_form {
+    grid-row: 4 / span 2;
+  }
+
+  .contact-footer {
+    grid-row: 7 / span 1;
+    background-color: white;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #242424;
+    grid-column: 1 / span 3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  /*************************Contact Page for big screen END *******************************/
+}
+
+/********************* END: tablet screen ************************/
+
+/*****************************************************
+          for big screen (bigger than 1024px)
+*****************************************************/
+
+@media all and (min-width: 1024px) {
 
   .container {
     display: grid;
@@ -934,13 +1217,14 @@ header p{
       font-size: 12px;
       line-height: 1.5;
       color: #242424;
-      grid-column: 2 / span 4;
+      grid-column: 2 / span 3;
       padding-top: 30px;
       padding-bottom: 30px;
       text-align: center;
     }
     /*************************Contact Page for big screen END *******************************/
   }
+
     /*End the media query*/
 
     @media screen and (prefers-reduced-motion: reduce) {
