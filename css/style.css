@@ -3,7 +3,7 @@ html{
 }
 
 body{
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, sans-serif;
   background-color: white;
   color: #242424;
   font-size: 18px;
@@ -198,7 +198,7 @@ input[type=reset]:hover {
   background-size: cover;       /* Parallax effect */
   color: white;
   height: 1100px;                /* Parallax effect */
-  background-image: url("../images/para1.jpg");
+  background-image: url("../images/cloud2.jpg");
   /*background-color: black;*/
 }
 /**** Contact Form End ****/
@@ -311,14 +311,15 @@ header p{
 }
 
 .umich-image, .bupt-image{
-  grid-column: 1 / span 3;
+  grid-column: 1 / -1;
   max-height: 1200px;
   overflow: hidden;
+  margin: 20px 20px;
 }
 
 .parallax{
-  grid-column: 1 / span 5;
-  grid-row: 3 / span 6;
+  grid-column: 1 / -1;
+  grid-row: 3 / span 5;
 }
 /* row */
 .education{
@@ -430,7 +431,8 @@ header p{
   grid-column: 2 / span 1;
 }
   .csdn, .zhihu, .github{
-    grid-column: 2 / span 1;
+    grid-column: 2 / 4;
+    margin: auto 20px auto 100px;
   }
 
   /* row */
@@ -720,6 +722,7 @@ header p{
   /* column */
   .education {
     grid-column: 2 / span 2;
+    margin: 20px auto;
   }
 
   .experience {
@@ -737,6 +740,7 @@ header p{
   /* row */
   .education {
     grid-row: 3 / span 1;
+
   }
 
   .umich, .umich-image {
@@ -751,11 +755,11 @@ header p{
     grid-row: 6 / span 1;
   }
 }
-/*************************************** Home Page End *********************************************/
+/*************************************** Home Page tablet End *********************************************/
 
 
-/*************************************** Sharing Page for big screen ********************************************/
-@media all and (min-width: 800px) {
+/*************************************** Sharing Page for tablet ********************************************/
+@media all and (min-width: 800px) and (max-width: 1024px) {
 
   .container-share {
     display: grid;
@@ -764,13 +768,16 @@ header p{
     grid-row-gap: 50px;
   }
 
+  #heade-sharing {
+    grid-column: 2 / -1;
+  }
   /* column */
   .share {
-    grid-column: 2 / span 4;
+    grid-column: 3 / span 3;
   }
 
   .share-image {
-    grid-column: 2 / span 4;
+    grid-column: 3 / span 3;
     max-height: 600px;
     overflow: hidden;
   }
@@ -782,6 +789,7 @@ header p{
 
   .csdn, .zhihu, .github {
     grid-column: 3 / span 4;
+    margin: auto auto;
   }
 
   /* row */
@@ -828,10 +836,9 @@ header p{
     background-position: center;
     background-size: cover;
   }
+  /*************************************** Sharing Page tablet End********************************************/
 
 
-
-  /*************************************** Sharing Page End********************************************/
 
   /******************* For gallary page Location ************************/
   .gallary_photo {
@@ -925,7 +932,7 @@ header p{
     background-size: 800px 600px;
   }
 
-  /*************************Contact Page for big screen *******************************/
+  /*************************Contact Page for tablet *******************************/
   .container-contact {
     display: grid;
     grid-template-columns: auto 400px auto;
@@ -934,7 +941,7 @@ header p{
   }
 
   .flex-box {
-    grid-column: 2 / span 4;
+    grid-column: 2 / span 3;
   }
 
   .contact_form {
@@ -950,6 +957,7 @@ header p{
     grid-column: 2 / span 2;
     text-align: center;
   }
+
   .contact-footer {
     grid-row: 7 / span 1;
     background-color: white;
@@ -961,10 +969,12 @@ header p{
     padding-bottom: 30px;
     text-align: center;
   }
-  /*************************Contact Page for big screen END *******************************/
+  /*************************Contact Page for tablet END *******************************/
 }
 
 /********************* END: tablet screen ************************/
+
+
 
 /*****************************************************
           for big screen (bigger than 1024px)
@@ -1022,6 +1032,7 @@ header p{
   /* row */
   .education {
     grid-row: 3 / span 1;
+    margin: 20px 20px;
   }
 
   .umich, .umich-image {
@@ -1212,11 +1223,13 @@ header p{
     /*************************Contact Page for big screen *******************************/
     .container-contact {
       display: grid;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: 50px 100px 100px 300px 150px 300px 150px;
+      grid-template-columns: auto 400px auto;
+      grid-template-rows: 70px 100px 100px 300px 150px 300px 150px;
       grid-row-gap: 15px;
     }
-
+    #header-contact{
+      margin: 31px auto 20px auto;
+    }
     .flex-box {
       grid-column: 2 / span 4;
     }
