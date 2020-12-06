@@ -225,10 +225,20 @@ input[type=reset]:hover {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner  {
+  transform: rotateY(180deg);
+}
+.flip-card:focus .flip-card-inner {
   transform: rotateY(180deg);
 }
 
+.flip-card:focus-within .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card: active .flip-card-inner {
+  transform: rotateY(180deg);
+}
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -670,8 +680,9 @@ header p{
   }
 .flip-card {
   grid-row: 6 / span 6;
-  grid-column: 2 / span 2;
-  text-align: center;
+  grid-column: 2 / span 3;
+  align-items: center;
+  margin: 10px auto;
 }
 
   .contact-footer{
@@ -768,9 +779,6 @@ header p{
     grid-row-gap: 50px;
   }
 
-  #heade-sharing {
-    grid-column: 2 / -1;
-  }
   /* column */
   .share {
     grid-column: 3 / span 3;
@@ -955,7 +963,9 @@ header p{
   .flip-card {
     grid-row: 6 / span 6;
     grid-column: 2 / span 2;
-    text-align: center;
+    display:grid;
+    align-items: center;
+    margin: 10px auto;
   }
 
   .contact-footer {
@@ -964,10 +974,13 @@ header p{
     font-size: 12px;
     line-height: 1.5;
     color: #242424;
-    grid-column: 1 / span 3;
+    grid-column: 2 / span 3;
     padding-top: 30px;
     padding-bottom: 30px;
-    text-align: center;
+   
+    display: grid;
+    align-items: center;
+    margin: 10px auto;
   }
   /*************************Contact Page for tablet END *******************************/
 }

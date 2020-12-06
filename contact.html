@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-184830792-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-184830792-3');
+  </script>
     <meta charset="utf-8">
     <!-- Google Analytics -->
     <script>
@@ -27,12 +36,12 @@
       <ul>
         <li><a href="index.html" id="home">Home</a></li>
         <li><a href="sharing.html" id="about_me_nav">Sharing</a></li>
-        <li><a href="gallary.html" id="gallary_nav">Gallary</a></li>
+        <li><a href="gallery.html" id="gallary_nav">Gallery</a></li>
         <li><a href="contact.html" id="current_page_nav">Contact</a></li>
       </ul>
     </nav>
     <header id="header-contact">
-      <h1 class="puff-in">Welcome to Zihan's Homepage!</h1>
+      <h1 class="puff-in" id="main">Welcome to Zihan's Homepage!</h1>
     </header>
 
     <div class="flex-box">
@@ -63,7 +72,7 @@
       </form>
     </div>
 
-    <div class="flip-card">
+    <div class="flip-card" tabindex="0">
       <div class="flip-card-inner">
         <div class="flip-card-front">
           <img src="images/gitcard.png" alt="Avatar" style="width:300px;height:300px;">
