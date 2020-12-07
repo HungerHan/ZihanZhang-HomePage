@@ -1072,7 +1072,9 @@ header p{
       grid-template-rows: 70px 70px 150px 100px 100px 100px 300px 100px;
       grid-row-gap: 50px;
     }
-
+    .sharing-header{
+        grid-column: 2 /span 4;
+    }
     /* column */
     .share {
       grid-column: 2 / span 4;
